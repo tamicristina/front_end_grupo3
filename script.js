@@ -22,7 +22,7 @@ function atualiarMensagem() {
 }
 
 // Atualizar a mensagem a cada 5 segundos
-setInterval(atualiarMensagem, 3000);
+setInterval(atualiarMensagem, 5000);
 
-// Atualizar imediatamente quando a página for
+// Atualizar imediatamente quando a página for carregada
 atualiarMensagem();
