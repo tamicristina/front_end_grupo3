@@ -20,8 +20,8 @@
   border: 1px solid black !important;
   background-color: white;
   z-index: 3;
-  position: relative; 
-  overflow: visible; 
+  position: relative;
+  overflow: visible;
 }
 
 .box {
@@ -43,22 +43,32 @@
 }
 
 .faixa-vermelha {
-    margin-top: 20px;
+  margin-top: 20px;
+  width: 120%;
+  max-width: none;
+  height: 5vh;
+  background-color: #7d0013;
+  position: absolute;
+  z-index: 5;
+  left: -6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.corpo-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .faixa-vermelha {
     width: 120%;
-    max-width: none;
-    height: 5vh;
-    background-color: #7d0013;
-    position: absolute;
-    z-index: 5;
-    left: -6%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: -8%;
   }
-  
-  @media (max-width: 768px) {
-    .faixa-vermelha {
-      width: 120%; 
-      left: -8%;
-    }
-  }
+}
